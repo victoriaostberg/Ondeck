@@ -1,0 +1,155 @@
+
+body{
+   font-family: 'Inter', sans-serif; 
+   background-color: #F3EDE5;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #6C6C6C;
+}
+
+.desktopNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 20px;
+}
+
+.menu-ul .dropdown > div::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9px 9px 9px;
+    border-color: transparent transparent #fff transparent;
+    top: -7px;
+    left: 97px;
+    z-index: -1;
+}
+.menu-ul .dropdown-container:hover > div {
+    display: block;
+}
+
+.dropdown-container{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    left: -80px;
+    padding-top: 30px;
+}
+
+.dropdown > div{
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.dd-option{
+    width: 350px; 
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.dd-option-img{
+    align-self: flex-start;
+    width: 22px;
+    height: 22px;
+}
+
+.dd-option-details{
+    color:#6C6C6C;
+    font-size: 14px;
+    line-height: 135%;
+}
+
+.dd-option-details > h2{
+    font-size: 14px;
+    color: rgb(10, 38, 63);
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.try-btn{
+    background-color: #133416;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color:#F3EDE5;
+    border: none;
+}
+
+.sign-in{
+    border: none;
+    margin-right: 10px;
+    color: #6C6C6C;
+    background-color:#F3EDE5;
+}
+
+h1{
+    font-size: 800;
+}
+
+.yellow-heading{
+    color: #F7B300;
+}
+
+.lead{
+    color: #6C6C6C;
+}
+
+.icon{
+    margin-left: 10px;
+    display: inline-block
+}
+
+.btn-primary{
+    background-color: #133416;
+    border-radius: 5px;
+    border: none;
+}
+
+.rating{
+    display: inline-block;
+    color: #6C6C6C;
+}
+
+.trusted{
+    text-align: center;
+    color: #6C6C6C;
+}
+
+.endorsements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.endorsements > div{
+    display: flex;
+    justify-content: center;
+    gap: 40px 20px;
+    flex-wrap: wrap;
+}
